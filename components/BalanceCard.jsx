@@ -23,8 +23,7 @@ export const BalanceCard = ({ summary }) => {
         <View style={styles.balanceStatItem}>
           <Text style={styles.balanceStatLabel}>Expenses</Text>
           <Text style={[styles.balanceStatAmount, { color: COLORS.expense }]}>
-            -$
-            {parseFloat(summary.expenses).toFixed(2)}
+            -${parseFloat(summary.expenses).toFixed(2)}
           </Text>
         </View>
       </View>
